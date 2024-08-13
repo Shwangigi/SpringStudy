@@ -1,0 +1,4 @@
+-- 프로젝트에 ojdbc.jar 연결 한 후에 진행한다.
+-- 프로젝트 우클릭 -> Build path -> config build path -> Libaries 탭 -> Classpath에 삽입 -> apply
+-- Deployment Aseembly -> java build path -> ojdbc8.jar 추가 -> apply
+-- 결과 Reference Libraries에 ojdbc6.jar 보이면 성공
