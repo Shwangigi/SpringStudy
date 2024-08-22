@@ -41,15 +41,15 @@
                   <input class="form-control" name="writer" value='<c:out value="${board.writer } "/>' readonly="readonly"/>
                </div> <!-- write .form-grop end -->
                
-                <%-- <div class="form-group">
+                <div class="form-group">
                   <label>등록일</label>
-                  <input class="form-control" name="regdate" value='<c:out value="${board.regdate} "/>' readonly="readonly"/>
+                  <input class="form-control" name="regdate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.regdate}"/>' readonly="readonly"/>
                </div> <!-- write .form-grop end -->
                
                 <div class="form-group">
                   <label>수정일</label>
-                  <input class="form-control" name="updateDate" value='<c:out value="${board.updateDate} "/>' readonly="readonly"/>
-               </div> <!-- write .form-group end --> --%>
+                  <input class="form-control" name="updateDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.updateDate}"/>' readonly="readonly"/>
+               </div> <!-- write .form-group end --> 
                
                <button type="submit" data-oper='modify' class="btn btn-primary">수정</button>
                <button type="submit" data-oper='remove' class="btn btn-danger">삭제</button>
